@@ -8,4 +8,4 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Math calculator is online"}
+    return {"message": "Math calculator is online! Congratulations!!!!!!"}
