@@ -9,6 +9,11 @@ from app.services.roots_ops import (
 router = APIRouter()
 
 @router.get("/square")
+# @router.get(
+#     "/square",
+#     summary="Calculate Square Root",
+#     description="Returns the positive square root of a non-negative number using math.sqrt()."
+# )
 def get_square_root(x: float = Query(..., description="Number to square root")):
     return {"operation": "square_root", "result": square_root(x)}
 
