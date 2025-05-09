@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.routers import arithmetic, algebra ,trigo ,roots ,exponents,logarithms ,complex ,vectors,statistics
 
-app = FastAPI(title="Math Calculator API")
+app = FastAPI(title="Math Calculator API",root_path="/math")
 
 @app.get("/")
 def root():
